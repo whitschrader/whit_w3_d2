@@ -1,0 +1,10 @@
+<form action="/creatures" method="post">
+	<input name="_method" type="hidden" value="put" />
+    <input type="text" name="creature[name]" value="<%= @creature.name %>">
+    <input type="text" name="creature[description]" value"<%= @creature.description %>">
+
+     <%= token_tag form_authenticity_token %>
+
+
+    <button> Update Creature </button>
+</form>

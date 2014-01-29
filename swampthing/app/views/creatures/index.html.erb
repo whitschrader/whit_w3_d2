@@ -1,0 +1,12 @@
+hello <%= @test %>
+
+<% @creatures.each do |creature| %>
+
+	<div> 
+		Name: <%= creature[:name] %> <br>
+		Description: <% creature[:description] %> <br>
+	</div>
+
+	<!-- need to add links  -->
+
+<% end %>
